@@ -22,7 +22,7 @@ private slots:
 
     void test_graphics_case_1();
     void test_graphics_case_2();
-//    void test_graphics_case_3();
+    void test_graphics_case_3();
 //    void test_graphics_case_4();
 //    void test_graphics_case_5();
 
@@ -85,7 +85,7 @@ void test_rocords::test_rocords_case_probel(){ //по тз, все пробел�
         );
 }
 
-void test_rocords::test_graphics_case_1(){
+void test_rocords::test_graphics_case_3(){
 
     QPoint a(0, 0), b(0, 1);
 
@@ -95,10 +95,18 @@ void test_rocords::test_graphics_case_1(){
           );
 }
 
-void test_rocords::test_graphics_case_2(){
-    QPoint a(0, 0), b(1, 0);
+void test_rocords::test_graphics_case_1(){
+    QPoint  b(1, 0);
     QVERIFY2(
-          H->map_has_point(b) == true, "ошибка БЛЕН"
+          H->map_has_point(b) == true, "ошибка"
+          );
+
+}
+
+void test_rocords::test_graphics_case_2(){
+    QPoint  b(3, 0);
+    QVERIFY2(
+          H->map_has_point(b) == false, "ошибка"
           );
 
 }
