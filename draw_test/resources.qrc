@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/sprites">
+        <file>Resources/sprites/user3.png</file>
+        <file>Resources/sprites/user2.png</file>
+        <file>Resources/sprites/walk.png</file>
+        <file>Resources/sprites/nonwalk.png</file>
+        <file>Resources/sprites/user1.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>Resources/font/RobotoMono-VariableFont_wght.ttf</file>
+    </qresource>
+</RCC>
