@@ -48,7 +48,7 @@ private:
         bool selected = false;
     } selected_point;
 
-//    bool map_has_point(const QPoint &point);
+    bool map_has_point(const QPoint &point);
     QVector<DrawManager::tile_type>::Iterator map_get_point(const QPoint &point);
 
 public slots:
