@@ -87,7 +87,7 @@ void test_rocords::test_rocords_case_probel(){ //по тз, все пробел�
 
 void test_rocords::test_graphics_case_3(){
 
-    QPoint a(0, 0), b(0, 1);
+    QPoint a(0, 0), b(0, 25);
 
 
 
@@ -98,7 +98,7 @@ void test_rocords::test_graphics_case_3(){
 }
 
 void test_rocords::test_graphics_case_1(){
-    QPoint  b(1, 0);
+    QPoint  b(25, 0);
     QVERIFY2(
           H->map_has_point(b) == true, "ошибка"
           );
