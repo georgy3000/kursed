@@ -25,6 +25,10 @@ private slots:
     void test_graphics_case_3();
 
     void test_draw_case_1();
+    void test_draw_case_2();
+    void test_draw_case_3();
+    void test_draw_case_4();
+    void test_draw_case_5();
 //    void test_graphics_case_5();
 
 
@@ -114,11 +118,51 @@ void test_rocords::test_graphics_case_2(){
 }
 
 void test_rocords::test_draw_case_1(){
+    const char c = 's';
+    DrawManager::FieldType t = DrawManager::UNKNOWN;
+    t = DrawManager::get_type_by_char(c);
+    QVERIFY2(
+          t == DrawManager::USER1, "ошибка"
+          );
+
+}
+
+void test_rocords::test_draw_case_2(){
     const char c = 't';
     DrawManager::FieldType t = DrawManager::UNKNOWN;
     t = DrawManager::get_type_by_char(c);
     QVERIFY2(
           t == DrawManager::USER2, "ошибка"
+          );
+
+}
+
+void test_rocords::test_draw_case_3(){
+    const char c = 'c';
+    DrawManager::FieldType t = DrawManager::UNKNOWN;
+    t = DrawManager::get_type_by_char(c);
+    QVERIFY2(
+          t == DrawManager::USER3, "ошибка"
+          );
+
+}
+
+void test_rocords::test_draw_case_4(){
+    const char c = 'x';
+    DrawManager::FieldType t = DrawManager::UNKNOWN;
+    t = DrawManager::get_type_by_char(c);
+    QVERIFY2(
+          t == DrawManager::NON_WALKABLE, "ошибка"
+          );
+
+}
+
+void test_rocords::test_draw_case_5(){
+    const char c = ' ';
+    DrawManager::FieldType t = DrawManager::UNKNOWN;
+    t = DrawManager::get_type_by_char(c);
+    QVERIFY2(
+          t == DrawManager::WALKABLE, "ошибка"
           );
 
 }
