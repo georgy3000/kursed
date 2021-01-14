@@ -23,14 +23,14 @@ private slots:
     void test_graphics_case_1();
     void test_graphics_case_2();
     void test_graphics_case_3();
-//    void test_graphics_case_4();
+
+    void test_draw_case_1();
 //    void test_graphics_case_5();
 
 
 };
 
-test_rocords::test_rocords()
-{
+test_rocords::test_rocords(){
     H = new ExtendedGraphicView();
     DrawManager::map_type n_map;
 
@@ -41,7 +41,7 @@ test_rocords::test_rocords()
     int posX = 0, posY = 0;
     for (auto row : rows) {
         for (char c : row.toStdString()) {
-            n_map.push_back({QPoint(posX, posY), DrawManager::get_type_by_char(c)});
+            n_map.push_back({QPoint(posX * DrawManager::SPRITE_SIZE, posY * DrawManager::SPRITE_SIZE), DrawManager::get_type_by_char(c)});
             posX += 1;
         }
         posX = 0;
@@ -90,8 +90,10 @@ void test_rocords::test_graphics_case_3(){
     QPoint a(0, 0), b(0, 1);
 
 
+
+
     QVERIFY2(
-          H->allowed_move_for(a, b) == true, "ошибка с перемещениями"
+          H->allowed_move_for(a, b) == true, "..."
           );
 }
 
@@ -111,6 +113,17 @@ void test_rocords::test_graphics_case_2(){
 
 }
 
+void test_rocords::test_draw_case_1(){
+    const char c = 't';
+    DrawManager::FieldType t = DrawManager::UNKNOWN;
+    t = DrawManager::get_type_by_char(c);
+    QVERIFY2(
+          t == DrawManager::USER2, "ошибка"
+          );
+
+}
+
+
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
@@ -119,6 +132,7 @@ int main(int argc, char *argv[]) {
 
     return a.exec();
 }
+
 //QTEST_APPLESS_MAIN(test_rocords)
 
 #include "tst_test_rocords.moc"

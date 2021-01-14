@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.3, 2021-01-13T23:41:55. -->
+<!-- Written by QtCreator 4.13.3, 2021-01-14T08:01:03. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -67,6 +67,7 @@
    <valuemap type="QVariantMap" key="AutoTest.CheckStates">
     <value type="Qt::CheckState" key="C:/Users/Public/Documents/qt projects/kursed/test/tst_test_rocords.cpp:test_graphics_case_1">Checked</value>
     <value type="Qt::CheckState" key="C:/Users/Public/Documents/qt projects/kursed/test/tst_test_rocords.cpp:test_graphics_case_2">Checked</value>
+    <value type="Qt::CheckState" key="C:/Users/Public/Documents/qt projects/kursed/test/tst_test_rocords.cpp:test_graphics_case_3">Checked</value>
     <value type="Qt::CheckState" key="C:/Users/Public/Documents/qt projects/kursed/test/tst_test_rocords.cpp:test_rocords">Checked</value>
     <value type="Qt::CheckState" key="C:/Users/Public/Documents/qt projects/kursed/test/tst_test_rocords.cpp:test_rocords_case_LL">Checked</value>
     <value type="Qt::CheckState" key="C:/Users/Public/Documents/qt projects/kursed/test/tst_test_rocords.cpp:test_rocords_case_NN">Checked</value>
