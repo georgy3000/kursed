@@ -92,10 +92,6 @@ void test_rocords::test_rocords_case_probel(){ //по тз, все пробел�
 void test_rocords::test_graphics_case_3(){
 
     QPoint a(0, 0), b(0, 25);
-
-
-
-
     QVERIFY2(
           H->allowed_move_for(a, b) == true, "..."
           );
@@ -106,7 +102,6 @@ void test_rocords::test_graphics_case_1(){
     QVERIFY2(
           H->map_has_point(b) == true, "ошибка"
           );
-
 }
 
 void test_rocords::test_graphics_case_2(){
@@ -114,7 +109,6 @@ void test_rocords::test_graphics_case_2(){
     QVERIFY2(
           H->map_has_point(b) == false, "ошибка"
           );
-
 }
 
 void test_rocords::test_draw_case_1(){
@@ -124,7 +118,6 @@ void test_rocords::test_draw_case_1(){
     QVERIFY2(
           t == DrawManager::USER1, "ошибка"
           );
-
 }
 
 void test_rocords::test_draw_case_2(){
@@ -134,7 +127,6 @@ void test_rocords::test_draw_case_2(){
     QVERIFY2(
           t == DrawManager::USER2, "ошибка"
           );
-
 }
 
 void test_rocords::test_draw_case_3(){
@@ -144,7 +136,6 @@ void test_rocords::test_draw_case_3(){
     QVERIFY2(
           t == DrawManager::USER3, "ошибка"
           );
-
 }
 
 void test_rocords::test_draw_case_4(){
@@ -154,7 +145,6 @@ void test_rocords::test_draw_case_4(){
     QVERIFY2(
           t == DrawManager::NON_WALKABLE, "ошибка"
           );
-
 }
 
 void test_rocords::test_draw_case_5(){
@@ -164,7 +154,6 @@ void test_rocords::test_draw_case_5(){
     QVERIFY2(
           t == DrawManager::WALKABLE, "ошибка"
           );
-
 }
 
 
