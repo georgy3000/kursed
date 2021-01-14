@@ -29,7 +29,7 @@ private slots:
     void test_draw_case_3();
     void test_draw_case_4();
     void test_draw_case_5();
-//    void test_graphics_case_5();
+
 
 
 };
@@ -85,7 +85,7 @@ void test_rocords::test_rocords_case_probel(){ //по тз, все пробел�
   auto name="Te st";
   rocords s(name,2,2);
   QVERIFY2(
-        s.NN()!="Te_st", "ошибка с пробелами"
+        s.NN()=="Te_st", "ошибка с пробелами"
         );
 }
 
