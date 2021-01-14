@@ -1,6 +1,5 @@
 #include "lev.h"
 
-lev::lev()
-{
+lev::lev(){
 
 }
